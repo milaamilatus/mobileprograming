@@ -4,7 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Home from './screens/Home';
+import Beranda from './screens/Beranda';
 import Akun from './screens/Akun';
 import Penjualan from './screens/Penjualan';
 
@@ -15,8 +15,8 @@ const MenuTab = () => {
   return (
     <Tabs.Navigator screenOptions={{tabBarActiveTintColor: 'green'}}>
       <Tabs.Screen
-        name="Home"
-        component={Home}
+        name="Beranda"
+        component={Beranda}
         options={{
           tabBarIcon: ({size, color}) => (
             <MaterialCommunityIcons name="home" size={size} color={color} />

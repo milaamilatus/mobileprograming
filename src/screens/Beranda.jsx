@@ -17,7 +17,7 @@ const Data = [
   {id: 5, label: 'Gojek'},
 ];
 
-const Home = ({navigation}) => {
+const Beranda = ({navigation}) => {
   return (
     <View>
       <FlatList
@@ -34,7 +34,7 @@ const Home = ({navigation}) => {
   );
 };
 
-export default Home;
+export default Beranda;
 
 const styles = StyleSheet.create({
   btn: {
