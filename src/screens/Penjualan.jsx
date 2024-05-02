@@ -17,7 +17,7 @@ const Data = [
   {id: 5, label: 'Gojek'},
 ];
 
-const Home = ({navigation}) => {
+const Penjualan = ({navigation}) => {
   return (
     <View>
       <FlatList
@@ -26,15 +26,15 @@ const Home = ({navigation}) => {
         horizontal={true}
       />
       <TouchableOpacity
-        onPress={() => navigation.navigate('Penjualan')}
+        onPress={() => navigation.navigate('Akun')}
         style={styles.btn}>
-        <Text style={styles.txt}>Tab Ke Penjualan</Text>
+        <Text style={styles.txt}>Tab Ke Akun</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
-export default Home;
+export default Penjualan;
 
 const styles = StyleSheet.create({
   btn: {
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
   txt: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
     color: 'white',
   },

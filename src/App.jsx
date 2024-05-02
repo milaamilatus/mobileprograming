@@ -5,7 +5,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Home from './screens/Home';
-import About from './screens/About';
+import Akun from './screens/Akun';
+import Penjualan from './screens/Penjualan';
 
 const stack = createNativeStackNavigator();
 const Tabs = createBottomTabNavigator();
@@ -23,11 +24,20 @@ const MenuTab = () => {
         }}
       />
       <Tabs.Screen
-        name="About"
-        component={About}
+        name="Penjualan"
+        component={Penjualan}
         options={{
           tabBarIcon: ({size, color}) => (
             <MaterialCommunityIcons name="cog" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Akun"
+        component={Akun}
+        options={{
+          tabBarIcon: ({size, color}) => (
+            <MaterialCommunityIcons name="akun" size={size} color={color} />
           ),
         }}
       />
