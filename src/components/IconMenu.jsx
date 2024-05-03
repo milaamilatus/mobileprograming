@@ -17,9 +17,9 @@ export default IconMenu;
 const styles = StyleSheet.create({
   container: {
     borderWidth: 1,
-    margin: 5,
-    padding: 5,
-    width: 84,
+    margin: 7,
+    padding: 7,
+    width: 85,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -28,11 +28,17 @@ const styles = StyleSheet.create({
     width: 81,
     height: 81,
     alignItems: 'center',
-    borderRadius: 10,
+    borderRadius: 11,
+    color: 'orange',
   },
   textIcon: {
-    color: 'black',
+    color: 'orange',
     justifyContent: 'center',
     alignItems: 'center',
-  }
+  },
+  txt: {
+    fontSize: 11,
+    fontWeight: 'bold',
+    color: 'black',
+  },
 });

@@ -17,7 +17,7 @@ const Data = [
   {id: 5, label: 'Gojek'},
 ];
 
-const Penjualan = ({navigation}) => {
+const Produk = ({navigation}) => {
   return (
     <View>
       <FlatList
@@ -26,28 +26,28 @@ const Penjualan = ({navigation}) => {
         horizontal={true}
       />
       <TouchableOpacity
-        onPress={() => navigation.navigate('Akun')}
+        onPress={() => navigation.navigate('Notifikasi')}
         style={styles.btn}>
-        <Text style={styles.txt}>Tab Ke Akun</Text>
+        <Text style={styles.txt}>Tab Ke Notifikasi</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
-export default Penjualan;
+export default Produk;
 
 const styles = StyleSheet.create({
   btn: {
-    margin: 10,
-    padding: 10,
+    margin: 9,
+    padding: 9,
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 10,
-    backgroundColor: 'black',
+    backgroundColor: 'orange',
   },
   txt: {
-    fontSize: 20,
+    fontSize: 11,
     fontWeight: 'bold',
-    color: 'white',
+    color: 'black',
   },
 });

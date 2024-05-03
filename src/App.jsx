@@ -5,15 +5,16 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Beranda from './screens/Beranda';
-import Akun from './screens/Akun';
-import Penjualan from './screens/Penjualan';
+import Saya from './screens/Saya';
+import Produk from './screens/Produk';
+import Notifikasi from './screens/Notifikasi';
 
 const stack = createNativeStackNavigator();
 const Tabs = createBottomTabNavigator();
 
 const MenuTab = () => {
   return (
-    <Tabs.Navigator screenOptions={{tabBarActiveTintColor: 'green'}}>
+    <Tabs.Navigator screenOptions={{tabBarActiveTintColor: 'orange'}}>
       <Tabs.Screen
         name="Beranda"
         component={Beranda}
@@ -24,17 +25,26 @@ const MenuTab = () => {
         }}
       />
       <Tabs.Screen
-        name="Penjualan"
-        component={Penjualan}
+        name="Produk"
+        component={Produk}
         options={{
           tabBarIcon: ({size, color}) => (
-            <MaterialCommunityIcons name="cog" size={size} color={color} />
+            <MaterialCommunityIcons name="cart-variant" size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="Akun"
-        component={Akun}
+        name="Notifikasi"
+        component={Notifikasi}
+        options={{
+          tabBarIcon: ({size, color}) => (
+            <MaterialCommunityIcons name="bell" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Saya"
+        component={Saya}
         options={{
           tabBarIcon: ({size, color}) => (
             <MaterialCommunityIcons name="account" size={size} color={color} />
