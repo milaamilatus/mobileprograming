@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, Image } from 'react-native';
-import IconMenu from '../components/IconMenu'; // Sesuaikan dengan lokasi komponen IconMenu
+import IconMenu from '../components/IconMenu';
 
 const Penjualan = [
   { id: 1, nama: 'Sepatu Nike', harga: 'Rp 500.000', image: require },
@@ -8,22 +8,18 @@ const Penjualan = [
   { id: 3, nama: 'Jam Tangan', harga: 'Rp 800.000', image: require },
   { id: 4, nama: 'Kemeja Pria', harga: 'Rp 350.000', image: require },
   { id: 5, nama: 'Celana Wanita', harga: 'Rp 400.000', image: require },
-];
-
-const Data = [
-  { id: 1, label: 'Top Up', image: require('../assets/dana.jpg') },
-  { id: 2, label: 'Diskon', image: require('../assets/diskon.png') },
-  { id: 3, label: 'Go Food', image: require('../assets/gofood.png') },
-  { id: 4, label: 'Grab', image: require('../assets/grab.png') },
-  { id: 5, label: 'Gojek', image: require('../assets/gojek.png') },
+  { id: 6, nama: 'Baju anak cewek', harga: 'Rp 100.000', image: require },
+  { id: 7, nama: 'Baju anak cowok', harga: 'Rp 90.000', image: require },
+  { id: 8, nama: 'HP Realme C53', harga: 'Rp 1.999.000.000', image: require },
+  { id: 9, nama: 'Case Hp', harga: 'Rp 20.000', image: require },
+  { id: 10, nama: 'Sarung Tenun', harga: 'Rp 70.000', image: require },
 ];
 
 const Beranda = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Beranda</Text>
+      <Text style={styles.header}>Produk Baru</Text>
       
-      {/* Penjualan */}
       <FlatList
         data={Penjualan}
         renderItem={({ item }) => (
@@ -40,21 +36,6 @@ const Beranda = ({ navigation }) => {
         numColumns={2}
         keyExtractor={(item) => item.id.toString()}
       />
-
-      {/* Kategori */}
-      <FlatList
-        data={Data}
-        renderItem={({ item }) => <IconMenu label={item.label} />}
-        horizontal={true}
-        keyExtractor={(item) => item.id.toString()}
-        contentContainerStyle={styles.flatListContainer}
-      />
-      
-      <TouchableOpacity
-        onPress={() => navigation.navigate('Produk')}
-        style={styles.btn}>
-        <Text style={styles.txt}>Lihat Produk</Text>
-      </TouchableOpacity>
     </View>
   );
 };
@@ -68,9 +49,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   header: {
-    fontSize: 24,
+    fontSize: 23,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 10,
   },
   flatListContainer: {
     flexGrow: 1,
@@ -79,7 +60,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   itemContainer: {
-    width: '45%',
+    width: '47%',
     margin: 5,
     backgroundColor: '#fff',
     borderRadius: 10,
