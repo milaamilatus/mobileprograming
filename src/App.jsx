@@ -37,7 +37,7 @@ const MenuTab = () => {
         component={Akun}
         options={{
           tabBarIcon: ({size, color}) => (
-            <MaterialCommunityIcons name="akun" size={size} color={color} />
+            <MaterialCommunityIcons name="account" size={size} color={color} />
           ),
         }}
       />
