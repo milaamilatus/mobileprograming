@@ -25,8 +25,8 @@ const styles = StyleSheet.create({
   },
   box: {
     borderWidth: 1,
-    width: 72,
-    height: 72,
+    width: 81,
+    height: 81,
     alignItems: 'center',
     borderRadius: 10,
   },
