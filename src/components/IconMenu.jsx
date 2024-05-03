@@ -30,4 +30,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10,
   },
+  textIcon: {
+    color: 'black',
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
 });
