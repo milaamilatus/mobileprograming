@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   tombolPengaturan: {
-    backgroundColor: 'blue',
+    backgroundColor: 'orange',
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,

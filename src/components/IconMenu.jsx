@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   txt: {
-    fontSize: 11,
+    fontSize: 18,
     fontWeight: 'bold',
     color: 'black',
   },

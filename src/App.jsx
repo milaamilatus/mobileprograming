@@ -6,7 +6,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Beranda from './screens/Beranda';
 import Saya from './screens/Saya';
-import Produk from './screens/Produk';
+import Keranjang from './screens/Keranjang';
 import Notifikasi from './screens/Notifikasi';
 
 const stack = createNativeStackNavigator();
@@ -25,8 +25,8 @@ const MenuTab = () => {
         }}
       />
       <Tabs.Screen
-        name="Produk"
-        component={Produk}
+        name="Keranjang"
+        component={Keranjang}
         options={{
           tabBarIcon: ({size, color}) => (
             <MaterialCommunityIcons name="cart-variant" size={size} color={color} />

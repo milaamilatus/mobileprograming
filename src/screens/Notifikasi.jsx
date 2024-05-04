@@ -2,16 +2,14 @@ import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 
 const Notifications = () => {
-  // Dummy data for notifications
   const notifications = [
-    { id: 1, message: 'New order received' },
-    { id: 2, message: 'Payment processed' },
-    { id: 3, message: 'Item shipped' },
+    { id: 1, message: 'Paket anda telah diantar menuju alamat tujuan' },
+    { id: 2, message: 'Paket anda sedang di proses' },
+    { id: 3, message: 'Paket yang anda incar hampir habis' },
   ];
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Notifications</Text>
       <FlatList
         data={notifications}
         renderItem={({ item }) => <NotificationItem message={item.message} />}
@@ -40,7 +38,7 @@ const styles = StyleSheet.create({
   },
   notification: {
     padding: 10,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: 'black',
     marginBottom: 10,
     borderRadius: 5,
   },

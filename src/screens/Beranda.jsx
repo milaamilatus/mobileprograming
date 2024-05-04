@@ -3,16 +3,16 @@ import { StyleSheet, Text, View, FlatList, TouchableOpacity, Image } from 'react
 import IconMenu from '../components/IconMenu';
 
 const Penjualan = [
-  { id: 1, nama: 'Sepatu Nike', harga: 'Rp 500.000', image: require },
-  { id: 2, nama: 'Tas Branded', harga: 'Rp 1.200.000', image: require },
-  { id: 3, nama: 'Jam Tangan', harga: 'Rp 800.000', image: require },
-  { id: 4, nama: 'Kemeja Pria', harga: 'Rp 350.000', image: require },
-  { id: 5, nama: 'Celana Wanita', harga: 'Rp 400.000', image: require },
-  { id: 6, nama: 'Baju anak cewek', harga: 'Rp 100.000', image: require },
-  { id: 7, nama: 'Baju anak cowok', harga: 'Rp 90.000', image: require },
-  { id: 8, nama: 'HP Realme C53', harga: 'Rp 1.999.000.000', image: require },
-  { id: 9, nama: 'Case Hp', harga: 'Rp 20.000', image: require },
-  { id: 10, nama: 'Sarung Tenun', harga: 'Rp 70.000', image: require },
+  { id: 1, nama: 'Sepatu Nike', harga: 'Rp 500.000'},
+  { id: 2, nama: 'Tas Branded', harga: 'Rp 1.200.000'},
+  { id: 3, nama: 'Jam Tangan', harga: 'Rp 800.000' },
+  { id: 4, nama: 'Kemeja Pria', harga: 'Rp 350.000' },
+  { id: 5, nama: 'Celana Wanita', harga: 'Rp 400.000'},
+  { id: 6, nama: 'Baju anak cewek', harga: 'Rp 100.000'},
+  { id: 7, nama: 'Baju anak cowok', harga: 'Rp 90.000'},
+  { id: 8, nama: 'HP Realme C53', harga: 'Rp 1.999.000.000'},
+  { id: 9, nama: 'Case Hp', harga: 'Rp 20.000'},
+  { id: 10, nama: 'Sarung Tenun', harga: 'Rp 70.000'},
 ];
 
 const Beranda = ({ navigation }) => {
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   itemContainer: {
     width: '47%',
     margin: 5,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
