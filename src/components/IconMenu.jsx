@@ -1,13 +1,13 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import React from 'react';
 
-const IconMenu = ({label}) => {
+const IconMenu = ({ label }) => {
   return (
-    <TouchableOpacity style={StyleSheet.container}>
+    <TouchableOpacity style={styles.container}>
       <View style={styles.box}>
-        <Text style={StyleSheet.textIcon}>Icon</Text>
+        <Text style={styles.textIcon}>Icon</Text>
       </View>
-      <Text>{label}</Text>
+      <Text style={styles.txt}>{label}</Text>
     </TouchableOpacity>
   );
 };
